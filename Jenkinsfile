@@ -25,7 +25,7 @@ pipeline {
                     sh 'tar -czf userAuth.tar.gz *'
                     sh "scp -o StrictHostKeyChecking=no userAuth.tar.gz ${PROD_USERNAME}@${PROD_SERVER}:${PROD_DIR}"
                     sh 'echo Files transferred'
-                    sh "ssh -o StrictHostKeyChecking=no ${PROD_USERNAME}@${PROD_SERVER} 'pwd && mkdir myflix-user-auth || true && cd myflix-user-auth && tar -xzf userAuth.tar.gz && ls -l'"
+                    sh "ssh -o StrictHostKeyChecking=no ${PROD_USERNAME}@${PROD_SERVER} 'pwd && cd myflix-user-auth && tar -xzf userAuth.tar.gz && ls -l'"
                     
                 }
             }
