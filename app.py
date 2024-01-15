@@ -31,7 +31,7 @@ def login():
         if response != None:
             # Successful login, redirect to the home page
             # You may want to handle the session ID here
-            return redirect("http://127.0.0.1:5010/")
+            return redirect("http://34.130.249.80/:5010/")
         else:
             # Failed login, you might want to handle error messages here
             return render_template('login.html', error_message="Invalid credentials")
