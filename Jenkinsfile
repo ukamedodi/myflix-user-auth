@@ -5,8 +5,8 @@ pipeline {
         PROD_USERNAME = 'ukamedodi'
         PROD_SERVER = '34.130.249.80'
         PROD_DIR = '/home/ukamedodi/myflix-user-auth'
-        DOCKER_IMAGE_NAME = 'userAuth-deployment'
-        DOCKER_CONTAINER_NAME = 'userAuth'
+        DOCKER_IMAGE_NAME = 'user-auth-deployment'
+        DOCKER_CONTAINER_NAME = 'user-auth'
         DOCKER_CONTAINER_PORT = '5000'
         DOCKER_HOST_PORT = '5000'
     }
