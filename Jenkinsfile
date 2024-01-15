@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     environment {
-        PROD_USERNAME = 'kingsleyi67'
-        PROD_SERVER = ''
-        PROD_DIR = '/home/amedikusettor/myflix'
+        PROD_USERNAME = 'ukamedodi'
+        PROD_SERVER = '34.130.249.80'
+        PROD_DIR = '/home/ukamedodi/myflix-user-auth'
         DOCKER_IMAGE_NAME = 'myflix-deployment'
         DOCKER_CONTAINER_NAME = 'myflix'
-        DOCKER_CONTAINER_PORT = '8000'
-        DOCKER_HOST_PORT = '8000'
+        DOCKER_CONTAINER_PORT = '5000'
+        DOCKER_HOST_PORT = '5000'
     }
 
     stages {
